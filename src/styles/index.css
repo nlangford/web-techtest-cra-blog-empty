@@ -1,0 +1,41 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+main {
+  max-width: 1200px;
+  margin: 32px auto;
+}
+
+table {
+  width: 100%;
+}
+
+table thead {
+  text-align: left;
+}
+
+table th,
+table td { 
+  padding: 16px 0;
+}
