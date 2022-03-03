@@ -3,6 +3,9 @@
 This is an extremely oversimplified blog built using Typescript and bootstrapped using `create-react-app`. Well, calling
 it a blog is pushing it a bit as it's missing the content from the pages!
 
+Wee note on the TypeScript aspect: `strict` mode is turned off so at any point you wish, feel free to fall back to using
+JavaScript.
+
 ## Tasks
 
 There are two pages that need worked on:
