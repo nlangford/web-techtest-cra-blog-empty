@@ -17,7 +17,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: black;
+    background-color: #282828;
     color: white;
   }
 }
@@ -38,4 +38,32 @@ table thead {
 table th,
 table td { 
   padding: 16px 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+a.button {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+a.button:hover {
+  background-color: grey;
+  color: white;
+}
+
+.author {
+ font-style: italic;
+}
+
+.views {
+  float: right;
 }

@@ -1,9 +1,10 @@
 import { blogEntries } from "./entries";
+import {BlogEntry} from "../models";
 
 const db = {
   blogEntries: {
-    getAll: (offset: number, take: number) => blogEntries.slice(offset, offset + take),
-    getOneBySlug: (slug: string) => {
+    getAll: (offset: number, take: number): BlogEntry[] => blogEntries.slice(offset, offset + take),
+    getOneBySlug: (slug: string): BlogEntry => {
       const blogEntry = blogEntries.find(be => be.slug === slug);
       
       if (!blogEntry) {
@@ -13,6 +14,6 @@ const db = {
       return blogEntry;
     }
   },
-}
+};
 
 export const useBlogEntries = () => db.blogEntries;
